@@ -1,3 +1,3 @@
 const app = require('./app');
 
-app.listen(3003, () => console.log('Server is on...'));
+app.listen(process.env.PORT || 3003, () => console.log('Server is on...'));
