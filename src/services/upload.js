@@ -1,3 +1,4 @@
+require('dotenv').config();
 const B2 = require('backblaze-b2');
 
 const b2 = new B2({
