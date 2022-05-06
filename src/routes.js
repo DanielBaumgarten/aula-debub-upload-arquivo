@@ -10,7 +10,7 @@ routes.get('/health', (req, res) => {
   return res.status(200).send('Server is running');
 });
 
-routes.post('/upload/multpart', uploadConfig.single('file'), createGenericUpload);
+routes.post('/upload/multipart', uploadConfig.single('file'), createGenericUpload);
 routes.post('/upload/base64', base64Upload);
 
 module.exports = routes;
